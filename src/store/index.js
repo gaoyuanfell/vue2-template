@@ -24,7 +24,6 @@ export default new Vuex.Store({
   actions: {
     increment(context, products) {
       setTimeout(() => {
-        console.info(products)
         context.commit('increment', products)
       }, 1000)
     }
