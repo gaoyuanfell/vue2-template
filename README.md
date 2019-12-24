@@ -1,19 +1,16 @@
 # yyh-admin
 
-## Project setup
-```
-yarn install
-```
+# vscode 插件
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+ESLint
+Prettier - Code formatter
+Vetur
+Vue 2 Snippets
 
-### Compiles and minifies for production
-```
-yarn build
-```
+# vscode 配置
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+formatOnSave 勾选
+
+# 注意事项
+
+代码提交前 需要执行 npm run lint / yarn run lint

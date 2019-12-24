@@ -1,16 +1,26 @@
 <template>
   <div class="home">
-    <Button>123123123123123</Button>
+    <Button @click="add()">增加{{ getCount }}</Button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'home',
-  mounted() {
-    console.info(this.$store.dispatch('increment'))
+  computed: {
+    getCount() {
+      return this.$store.getters.getCount
+    }
   },
-  methods: {}
+  mounted() {
+    console.info(this.$store.state.count)
+  },
+  methods: {
+    add() {
+      this.$store.commit('increment', 1)
+      this.$store.dispatch('increment', 1)
+    }
+  }
 }
 </script>
 

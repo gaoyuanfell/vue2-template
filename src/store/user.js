@@ -1,5 +1,8 @@
 export default {
-  state: {},
+  namespaced: true,
+  state: {
+    userInfo: {}
+  },
   mutations: {},
   actions: {},
   getters: {}

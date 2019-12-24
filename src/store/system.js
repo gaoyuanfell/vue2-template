@@ -1,5 +1,9 @@
 export default {
-  state: {},
+  namespaced: true,
+  state: {
+    menu: [],
+    router: []
+  },
   mutations: {},
   actions: {},
   getters: {}
