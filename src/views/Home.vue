@@ -1,12 +1,8 @@
 <template>
   <div class="home">
     <Button @click="add()">增加{{ getCount }}</Button>
-    <DatePicker
-      type="daterange"
-      format="yyyy-MM-dd"
-      placeholder="请选择"
-      @on-change="change($event)"
-    ></DatePicker>
+    <DatePicker type="daterange" format="yyyy-MM-dd" placeholder="请选择" @on-change="change($event)"></DatePicker>
+    <router-link :to="{ path: '/login' }">登录</router-link>
   </div>
 </template>
 
@@ -20,6 +16,7 @@ export default {
   },
   mounted() {
     console.info(this.$store.state.count)
+    this.$store.commit('user/setUserInfo', { name: '张三' })
   },
   methods: {
     add() {

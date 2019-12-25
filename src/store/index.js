@@ -17,9 +17,7 @@ export default new Vuex.Store({
     }
   },
   getters: {
-    getCount: state => {
-      return state.count
-    }
+    getCount: state => state.count
   },
   actions: {
     increment(context, products) {

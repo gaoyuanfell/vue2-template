@@ -3,7 +3,11 @@ export default {
   state: {
     userInfo: {}
   },
-  mutations: {},
+  mutations: {
+    setUserInfo(state, payload) {
+      state.userInfo = payload
+    }
+  },
   actions: {},
   getters: {}
 }
